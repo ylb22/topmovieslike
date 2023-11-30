@@ -1,11 +1,7 @@
-import styles from "./Spinner.module.css";
+import "./Spinner.module.css";
 
 function Spinner() {
-  return (
-    <div className={styles.spinnerContainer}>
-      <div className={styles.spinner}></div>
-    </div>
-  );
+  return <div className="loading"></div>;
 }
 
 export default Spinner;

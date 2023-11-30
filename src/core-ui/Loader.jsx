@@ -1,6 +1,6 @@
 import "./loader.css";
 function Loader() {
-  return <div className="spinner"></div>;
+  return <div className="loading"></div>;
 }
 
 export default Loader;

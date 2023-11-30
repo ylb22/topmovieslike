@@ -28,7 +28,7 @@ export const findByGenres = createAsyncThunk(
   async function (obj) {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
-    const { currentId: genreId, currentPage } = obj;
+    const { currentId: genreId, sendID: currentPage } = obj;
 
     const res = await fetch(
       `${process.env.REACT_APP_BASEURL}/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&with_genres=${genreId}&page=${currentPage}`

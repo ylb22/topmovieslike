@@ -26,18 +26,18 @@ const AllMovies = () => {
   );
 
   const dispatch = useDispatch();
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
 
   const handlePageClick = (event) => {
-    setCurrentPage(() => event.selected);
-    dispatch(findMovies(currentPage));
+    setCurrentPage(event.selected);
+    // dispatch(findMovies(currentPage));
   };
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   useEffect(() => {
-    dispatch(findMovies(currentPage));
+    dispatch(findMovies(Number(currentPage) + 1));
   }, [dispatch, currentPage]);
 
   if (status === statusCode.LOADING) return <Loader />;
