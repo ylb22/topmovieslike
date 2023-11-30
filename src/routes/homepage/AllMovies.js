@@ -26,7 +26,7 @@ const AllMovies = () => {
   );
 
   const dispatch = useDispatch();
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handlePageClick = (event) => {
     setCurrentPage(() => event.selected);

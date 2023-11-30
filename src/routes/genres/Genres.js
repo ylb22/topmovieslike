@@ -16,7 +16,7 @@ const Genres = () => {
   const { genreListMovies, genreList, status, pageAmount } = useSelector(
     (state) => state.movieList
   );
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const { id: currentId } = genreList;
 
   const dispatch = useDispatch();
