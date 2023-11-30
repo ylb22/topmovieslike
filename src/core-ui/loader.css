@@ -2,8 +2,8 @@
   height: 100dvh;
   width: 60px;
   margin: 0 auto;
-  position: relative;
-  /* position: absolute; */
+/*   position: relative; */
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
