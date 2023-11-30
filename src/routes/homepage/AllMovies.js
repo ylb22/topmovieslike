@@ -75,7 +75,7 @@ const AllMovies = () => {
         ))}
       </motion.ul>
       <ReactPaginate
-        forcePage={currentPage - 1 }
+        forcePage={currentPage}
         className="movies-pagination"
         breakLabel="..."
         nextLabel="next >"
