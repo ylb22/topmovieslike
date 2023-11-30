@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Absolute Center Spinner */
 .loading {
   position: fixed;
@@ -10,6 +11,24 @@
   left: 0;
   bottom: 0;
   right: 0;
+=======
+.spinner {
+  height: 100dvh;
+  width: 60px;
+  margin: 0 auto;
+/*   position: relative; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -(60px / 2) 0 0 - (60px / 2);
+  -webkit-animation: rotation 1s infinite linear;
+  -moz-animation: rotation 1s infinite linear;
+  -o-animation: rotation 1s infinite linear;
+  animation: rotation 1s infinite linear;
+  border: 6px solid rgba(220, 152, 16, 0.91);
+  border-radius: 100%;
+>>>>>>> dce83c7d1dad95c2ec7c66629706199283560f9d
 }
 
 /* Transparent Overlay */
