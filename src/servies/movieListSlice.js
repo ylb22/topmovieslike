@@ -31,7 +31,7 @@ export const findByGenres = createAsyncThunk(
     const { currentId: genreId, currentPage } = obj;
 
     const res = await fetch(
-      `${process.env.REACT_APP_BASEURL}/discover/movie/?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&with_genres=${genreId}&page=${currentPage}`
+      `${process.env.REACT_APP_BASEURL}/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&with_genres=${genreId}&page=${currentPage}`
     );
     const data = await res.json();
 
